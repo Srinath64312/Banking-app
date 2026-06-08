@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { BankingProvider } from "./context/BankingContext";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -13,7 +13,7 @@ import Investments from "./components/Investments";
 const App = () => {
   return (
     <BankingProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen bg-navy-900">
           <Navbar />
           <main>
@@ -29,7 +29,7 @@ const App = () => {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </BankingProvider>
   );
 };

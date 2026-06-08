@@ -2,6 +2,7 @@
   "name": "banking-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://Srinath64312.github.io/Banking-app",
   "dependencies": {
     "lucide-react": "^0.383.0",
     "react": "^18.2.0",
@@ -11,7 +12,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -24,5 +27,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

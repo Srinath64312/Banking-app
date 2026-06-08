@@ -35,6 +35,7 @@ src/
     ├── Transactions.jsx     # Transaction history (useEffect: filtering)
     ├── Cards.jsx            # Card management (useState: freeze/reveal)
     ├── Loans.jsx            # Loan management + calculator (useEffect: EMI)
+    ├── Investments.jsx      # Investment portfolio & ticker simulation (useState, useEffect)
     └── Support.jsx          # FAQ + Contact form (useState: form/accordion)
 ```
 
@@ -45,6 +46,7 @@ src/
 - **Transactions** — Search, filter by category, sort, export button
 - **Cards** — Card flip reveal, freeze/unfreeze, spending limits
 - **Loans** — Active loan tracker, real-time EMI calculator with sliders
+- **Investments** — Real-time simulated stock & crypto ticker tape, interactive SVG graph, and buy/sell terminal
 - **Support** — FAQ accordion, contact form with success state
 
 ## 🎨 Design
